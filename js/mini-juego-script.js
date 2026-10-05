@@ -13,7 +13,7 @@ const places = {
 
 const levels = [
 	{ task: "Viaje directo: Salí de casa y ve hasta la plaza para caminar un rato.", expected: ["casa-plaza"] },
-	{ task: "Ruta de trámites: Ve al hospital a comer en el restaurante y luego ve a sacar un préstamo en el banco.", expected: ["hospital-restaurante", "restaurante-banco"] },
+	{ task: "Ruta de trámites: Ve al hospital, después a comer en el restaurante y luego ve a sacar un préstamo en el banco.", expected: ["hospital-restaurante", "restaurante-banco"] },
 	{ task: "Ruta matutina: Desde la escuela, pasá por la tienda y termina tu recorrido en la estación.", expected: ["escuela-tienda", "tienda-estacion"] },
 	{ task: "Recorrido de estudio: Salí de casa hacia la plaza, luego andá a la biblioteca y finalmente a la escuela.", expected: ["casa-plaza", "plaza-biblioteca", "biblioteca-escuela"] },
 	{ task: "Fin de semana: Después del partido en la cancha, cruzá por la plaza y luego ve a cenar al restaurante.", expected: ["cancha-plaza", "plaza-restaurante"] },
