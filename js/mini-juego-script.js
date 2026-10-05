@@ -12,11 +12,11 @@ const places = {
 };
 
 const levels = [
-	{ task: "Viaje directo: Salí de tu casa y andá hasta la plaza para caminar un rato.", expected: ["casa-plaza"] },
-	{ task: "Ruta de trámites: Visitá el hospital, luego pasá por el restaurante y terminá en el banco.", expected: ["hospital-restaurante", "restaurante-banco"] },
-	{ task: "Ruta matutina: Desde la escuela, pasá por la tienda y terminá tu recorrido en la estación.", expected: ["escuela-tienda", "tienda-estacion"] },
+	{ task: "Viaje directo: Salí de casa y ve hasta la plaza para caminar un rato.", expected: ["casa-plaza"] },
+	{ task: "Ruta de trámites: Ve al hospital a comer en el restaurante y luego ve a sacar un préstamo en el banco.", expected: ["hospital-restaurante", "restaurante-banco"] },
+	{ task: "Ruta matutina: Desde la escuela, pasá por la tienda y termina tu recorrido en la estación.", expected: ["escuela-tienda", "tienda-estacion"] },
 	{ task: "Recorrido de estudio: Salí de casa hacia la plaza, luego andá a la biblioteca y finalmente a la escuela.", expected: ["casa-plaza", "plaza-biblioteca", "biblioteca-escuela"] },
-	{ task: "Fin de semana: Después del partido en la cancha, cruzá a la plaza y luego andá a cenar al restaurante.", expected: ["cancha-plaza", "plaza-restaurante"] },
+	{ task: "Fin de semana: Después del partido en la cancha, cruzá por la plaza y luego ve a cenar al restaurante.", expected: ["cancha-plaza", "plaza-restaurante"] },
 	{ task: "Ruta vecinal: Llegá a la estación, pasá por tu casa a buscar unos documentos y llevalos al banco.", expected: ["estacion-casa", "casa-banco"] },
 	{ task: "Día agitado: Hacé las compras en la tienda, cruzá la plaza, retirá dinero en el banco y visitá a un amigo en el hospital.", expected: ["tienda-plaza", "plaza-banco", "banco-hospital"] },
 	{ task: "Paseo por el norte: Salí de la escuela, sacá un libro en la biblioteca, mirá el partido en la cancha y andá al hospital.", expected: ["escuela-biblioteca", "biblioteca-cancha", "cancha-hospital"] },
