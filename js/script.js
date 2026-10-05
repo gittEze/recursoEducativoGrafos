@@ -250,7 +250,7 @@ document.addEventListener('keydown', (e) => {
         case '2': openModal('img/imagen2.png'); break;
         case '3': openModal('img/imagen3.png'); break;
         case '4': openModal('img/imagen4.png'); break;
-        case '5': window.location.href = '../html/mini-juego.html'; break;
+        case '5': window.location.href = 'html/mini-juego.html'; break;
         case 'Escape': closeModal(); break;
     }
 });
