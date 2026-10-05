@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grafo Interactivo</title>
+
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="nav-panel">
+        <button id="btn-1">1</button>
+        <button id="btn-2">2</button>
+        <button id="btn-3">3</button>
+        <button id="btn-4">4</button>
+        <button id="btn-5">5</button>
+    </nav>
+
+    <main id="app-container">
+        <img src="img/mapa.jpg" id="map-bg" alt="Mapa">
+        <svg id="graph-layer" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+            <g id="edges-layer"></g>
+            <g id="nodes-layer"></g>
+            <g id="custom-layer"></g>
+        </svg>
+    </main>
+
+    <div id="modal">
+        <img id="modal-img" src="" alt="Imagen Modal">
+    </div>
+
+    <div id="clock"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
