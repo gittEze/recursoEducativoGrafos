@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Construye la ciudad</title>
+	<link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+	<link rel="stylesheet" href="../css/mini-juego-style.css">
+</head>
+<body class="dark-mode">
+	<div id="clock-display" class="clock"></div>
+	<div id="screen-start" class="screen active">
+		<div class="card start-card">
+			<h1>CONSTRUYE LA CIUDAD</h1>
+			<p class="subtitle">Trazá las rutas y navegá por la ciudad.</p>
+			<div class="map-illustration">📍</div>
+			<p class="intro-text">Construí el grafo que representa el recorrido del GPS para cada trayectoria.</p>
+			<button id="btn-start" class="btn-primary">Encender GPS</button>
+		</div>
+	</div>
+	<div id="screen-game" class="screen">
+		<div class="game-container">
+			<aside class="sidebar">
+				<header class="game-header">
+					<div class="score-container">Puntos: <span id="score-display">0</span></div>
+					<div class="level-container">Ruta <span id="level-display">1</span></div>
+					<button id="btn-reset" class="btn-secondary btn-small">Apagar</button>
+				</header>
+				<div class="task-box">
+					<p id="task-text"></p>
+					<p id="feedback-text"></p>
+				</div>
+			</aside>
+			<main class="game-area">
+				<div class="map-wrapper">
+					<div id="map-container">
+						<svg id="svg-layer" width="100%" height="100%"></svg>
+						<div id="nodes-layer"></div>
+					</div>
+				</div>
+				<div class="controls">
+					<button id="btn-undo" class="btn-secondary">Deshacer tramo</button>
+					<button id="btn-check" class="btn-primary">Iniciar Navegación</button>
+				</div>
+			</main>
+		</div>
+	</div>
+	<div id="screen-waypoint" class="screen">
+		<div class="card waypoint-card">
+			<div class="waypoint-icon">📍</div>
+			<h2>Destino Alcanzado</h2>
+			<p class="waypoint-text">El GPS ha registrado tu recorrido con éxito.</p>
+			<div class="gps-points-large">+100 puntos</div>
+			<div class="waypoint-total-container">
+				<span class="total-label">Total</span>
+				<span id="waypoint-total-score" class="total-value">0</span>
+			</div>
+		</div>
+	</div>
+	<div id="screen-end" class="screen">
+		<div class="card final-card">
+			<h2>¡Viaje Finalizado!</h2>
+			<div class="map-illustration">🗺️</div>
+			<p>Has recorrido todos los destinos de la ciudad.</p>
+			<p class="final-score">Puntaje total: <span id="final-score-display"></span></p>
+			<button id="btn-play-again" class="btn-primary">Planear nuevo viaje</button>
+		</div>
+	</div>
+	<script src="../js/mini-juego-script.js"></script>
+</body>
+</html>
